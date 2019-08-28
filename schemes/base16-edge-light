@@ -1,0 +1,37 @@
+# Edge Light by cjayross (https://github.com/cjayross)
+
+set $base00 #fafafa
+set $base01 #7c9f4b
+set $base02 #d69822
+set $base03 #5e646f
+set $base04 #6587bf
+set $base05 #5e646f
+set $base06 #b870ce
+set $base07 #5e646f
+set $base08 #db7070
+set $base09 #db7070
+set $base0A #d69822
+set $base0B #7c9f4b
+set $base0C #509c93
+set $base0D #6587bf
+set $base0E #b870ce
+set $base0F #509c93
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

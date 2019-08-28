@@ -1,0 +1,37 @@
+# Sandcastle by George Essig (https://github.com/gessig)
+
+set $base00 #282c34
+set $base01 #2c323b
+set $base02 #3e4451
+set $base03 #665c54
+set $base04 #928374
+set $base05 #a89984
+set $base06 #d5c4a1
+set $base07 #fdf4c1
+set $base08 #83a598
+set $base09 #a07e3b
+set $base0A #a07e3b
+set $base0B #528b8b
+set $base0C #83a598
+set $base0D #83a598
+set $base0E #d75f5f
+set $base0F #a87322
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

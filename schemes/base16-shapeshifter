@@ -1,0 +1,37 @@
+# Shapeshifter by Tyler Benziger (http://tybenz.com)
+
+set $base00 #f9f9f9
+set $base01 #e0e0e0
+set $base02 #ababab
+set $base03 #555555
+set $base04 #343434
+set $base05 #102015
+set $base06 #040404
+set $base07 #000000
+set $base08 #e92f2f
+set $base09 #e09448
+set $base0A #dddd13
+set $base0B #0ed839
+set $base0C #23edda
+set $base0D #3b48e3
+set $base0E #f996e2
+set $base0F #69542d
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

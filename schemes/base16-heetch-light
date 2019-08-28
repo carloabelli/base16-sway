@@ -1,0 +1,37 @@
+# Heetch Light by Geoffrey Teale (tealeg@gmail.com)
+
+set $base00 #feffff
+set $base01 #392551
+set $base02 #7b6d8b
+set $base03 #9c92a8
+set $base04 #ddd6e5
+set $base05 #5a496e
+set $base06 #470546
+set $base07 #190134
+set $base08 #27d9d5
+set $base09 #bdb6c5
+set $base0A #5ba2b6
+set $base0B #f80059
+set $base0C #c33678
+set $base0D #47f9f5
+set $base0E #bd0152
+set $base0F #dedae2
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

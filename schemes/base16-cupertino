@@ -1,0 +1,37 @@
+# Cupertino by Defman21
+
+set $base00 #ffffff
+set $base01 #c0c0c0
+set $base02 #c0c0c0
+set $base03 #808080
+set $base04 #808080
+set $base05 #404040
+set $base06 #404040
+set $base07 #5e5e5e
+set $base08 #c41a15
+set $base09 #eb8500
+set $base0A #826b28
+set $base0B #007400
+set $base0C #318495
+set $base0D #0000ff
+set $base0E #a90d91
+set $base0F #826b28
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

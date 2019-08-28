@@ -1,0 +1,37 @@
+# Grayscale Dark by Alexandre Gavioli (https://github.com/Alexx2/)
+
+set $base00 #101010
+set $base01 #252525
+set $base02 #464646
+set $base03 #525252
+set $base04 #ababab
+set $base05 #b9b9b9
+set $base06 #e3e3e3
+set $base07 #f7f7f7
+set $base08 #7c7c7c
+set $base09 #999999
+set $base0A #a0a0a0
+set $base0B #8e8e8e
+set $base0C #868686
+set $base0D #686868
+set $base0E #747474
+set $base0F #5e5e5e
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

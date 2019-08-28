@@ -1,0 +1,37 @@
+# XCode Dusk by Elsa Gonsiorowski (https://github.com/gonsie)
+
+set $base00 #282B35
+set $base01 #3D4048
+set $base02 #53555D
+set $base03 #686A71
+set $base04 #7E8086
+set $base05 #939599
+set $base06 #A9AAAE
+set $base07 #BEBFC2
+set $base08 #B21889
+set $base09 #786DC5
+set $base0A #438288
+set $base0B #DF0002
+set $base0C #00A0BE
+set $base0D #790EAD
+set $base0E #B21889
+set $base0F #C77C48
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

@@ -1,0 +1,37 @@
+# Horizon Dark by Michaël Ball (http://github.com/michael-ball/)
+
+set $base00 #1C1E26
+set $base01 #232530
+set $base02 #2E303E
+set $base03 #6F6F70
+set $base04 #9DA0A2
+set $base05 #CBCED0
+set $base06 #DCDFE4
+set $base07 #E3E6EE
+set $base08 #E93C58
+set $base09 #E58D7D
+set $base0A #EFB993
+set $base0B #EFAF8E
+set $base0C #24A8B4
+set $base0D #DF5273
+set $base0E #B072D1
+set $base0F #E4A382
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

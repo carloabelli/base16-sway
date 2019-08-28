@@ -1,0 +1,37 @@
+# Outrun Dark by Hugo Delahousse (http://github.com/hugodelahousse/)
+
+set $base00 #00002A
+set $base01 #20204A
+set $base02 #30305A
+set $base03 #50507A
+set $base04 #B0B0DA
+set $base05 #D0D0FA
+set $base06 #E0E0FF
+set $base07 #F5F5FF
+set $base08 #FF4242
+set $base09 #FC8D28
+set $base0A #F3E877
+set $base0B #59F176
+set $base0C #0EF0F0
+set $base0D #66B0FF
+set $base0E #F10596
+set $base0F #F003EF
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

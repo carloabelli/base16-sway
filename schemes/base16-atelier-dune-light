@@ -1,0 +1,37 @@
+# Atelier Dune Light by Bram de Haan (http://atelierbramdehaan.nl)
+
+set $base00 #fefbec
+set $base01 #e8e4cf
+set $base02 #a6a28c
+set $base03 #999580
+set $base04 #7d7a68
+set $base05 #6e6b5e
+set $base06 #292824
+set $base07 #20201d
+set $base08 #d73737
+set $base09 #b65611
+set $base0A #ae9513
+set $base0B #60ac39
+set $base0C #1fad83
+set $base0D #6684e1
+set $base0E #b854d4
+set $base0F #d43552
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

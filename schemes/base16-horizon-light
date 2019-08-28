@@ -1,0 +1,37 @@
+# Horizon Light by Michaël Ball (http://github.com/michael-ball/)
+
+set $base00 #FDF0ED
+set $base01 #FADAD1
+set $base02 #F9CBBE
+set $base03 #BDB3B1
+set $base04 #948C8A
+set $base05 #403C3D
+set $base06 #302C2D
+set $base07 #201C1D
+set $base08 #F7939B
+set $base09 #F6661E
+set $base0A #FBE0D9
+set $base0B #94E1B0
+set $base0C #DC3318
+set $base0D #DA103F
+set $base0E #1D8991
+set $base0F #E58C92
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

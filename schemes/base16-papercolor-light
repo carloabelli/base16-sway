@@ -1,0 +1,37 @@
+# PaperColor Light by Jon Leopard (http://github.com/jonleopard) based on PaperColor Theme (https://github.com/NLKNguyen/papercolor-theme)
+
+set $base00 #eeeeee
+set $base01 #af0000
+set $base02 #008700
+set $base03 #5f8700
+set $base04 #0087af
+set $base05 #878787
+set $base06 #005f87
+set $base07 #444444
+set $base08 #bcbcbc
+set $base09 #d70000
+set $base0A #d70087
+set $base0B #8700af
+set $base0C #d75f00
+set $base0D #d75f00
+set $base0E #005faf
+set $base0F #005f87
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}

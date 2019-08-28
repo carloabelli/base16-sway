@@ -1,0 +1,37 @@
+# Atelier Plateau Light by Bram de Haan (http://atelierbramdehaan.nl)
+
+set $base00 #f4ecec
+set $base01 #e7dfdf
+set $base02 #8a8585
+set $base03 #7e7777
+set $base04 #655d5d
+set $base05 #585050
+set $base06 #292424
+set $base07 #1b1818
+set $base08 #ca4949
+set $base09 #b45a3c
+set $base0A #a06e3b
+set $base0B #4b8b8b
+set $base0C #5485b6
+set $base0D #7272ca
+set $base0E #8464c4
+set $base0F #bd5187
+
+client.focused          $base02 $base02 $base05 $base03 $base02
+client.focused_inactive $base01 $base01 $base03 $base01 $base01
+client.unfocused        $base01 $base01 $base03 $base01 $base01
+client.urgent           $base01 $base01 $base08 $base01 $base01
+
+bar {
+  colors {
+    background $base00
+    separator  $base01
+    statusline $base05
+
+    focused_workspace  $base00 $base02 $base05
+    active_workspace   $base00 $base01 $base03
+    inactive_workspace $base00 $base01 $base03
+    urgent_workspace   $base00 $base01 $base08
+    binding_mode       $base00 $base01 $base03
+  }
+}
