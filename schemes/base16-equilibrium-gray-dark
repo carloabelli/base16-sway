@@ -1,21 +1,21 @@
-# Nord by arcticicestudio
+# Equilibrium Gray Dark by Carlo Abelli
 
-set $base00 #2E3440
-set $base01 #3B4252
-set $base02 #434C5E
-set $base03 #4C566A
-set $base04 #D8DEE9
-set $base05 #E5E9F0
-set $base06 #ECEFF4
-set $base07 #8FBCBB
-set $base08 #BF616A
-set $base09 #D08770
-set $base0A #EBCB8B
-set $base0B #A3BE8C
-set $base0C #88C0D0
-set $base0D #81A1C1
-set $base0E #B48EAD
-set $base0F #5E81AC
+set $base00 #111111
+set $base01 #1b1b1b
+set $base02 #262626
+set $base03 #777777
+set $base04 #919191
+set $base05 #ababab
+set $base06 #c6c6c6
+set $base07 #e2e2e2
+set $base08 #f04339
+set $base09 #df5923
+set $base0A #bb8801
+set $base0B #7f8b00
+set $base0C #00948b
+set $base0D #008dd1
+set $base0E #6a7fd2
+set $base0F #e3488e
 
 client.focused          $base02 $base02 $base05 $base03 $base02
 client.focused_inactive $base01 $base01 $base03 $base01 $base01

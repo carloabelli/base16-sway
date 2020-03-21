@@ -1,21 +1,21 @@
-# Nord by arcticicestudio
+# Humanoid light by Thomas (tasmo) Friese
 
-set $base00 #2E3440
-set $base01 #3B4252
-set $base02 #434C5E
-set $base03 #4C566A
-set $base04 #D8DEE9
-set $base05 #E5E9F0
-set $base06 #ECEFF4
-set $base07 #8FBCBB
-set $base08 #BF616A
-set $base09 #D08770
-set $base0A #EBCB8B
-set $base0B #A3BE8C
-set $base0C #88C0D0
-set $base0D #81A1C1
-set $base0E #B48EAD
-set $base0F #5E81AC
+set $base00 #f8f8f2
+set $base01 #efefe9
+set $base02 #deded8
+set $base03 #c0c0bd
+set $base04 #60615d
+set $base05 #232629
+set $base06 #2f3337
+set $base07 #070708
+set $base08 #b0151a
+set $base09 #ff3d00
+set $base0A #ffb627
+set $base0B #388e3c
+set $base0C #008e8e
+set $base0D #0082c9
+set $base0E #700f98
+set $base0F #b27701
 
 client.focused          $base02 $base02 $base05 $base03 $base02
 client.focused_inactive $base01 $base01 $base03 $base01 $base01

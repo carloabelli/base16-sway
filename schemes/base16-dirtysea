@@ -1,21 +1,21 @@
-# Nord by arcticicestudio
+# dirtysea by Kahlil (Kal) Hodgson
 
-set $base00 #2E3440
-set $base01 #3B4252
-set $base02 #434C5E
-set $base03 #4C566A
-set $base04 #D8DEE9
-set $base05 #E5E9F0
-set $base06 #ECEFF4
-set $base07 #8FBCBB
-set $base08 #BF616A
-set $base09 #D08770
-set $base0A #EBCB8B
-set $base0B #A3BE8C
-set $base0C #88C0D0
-set $base0D #81A1C1
-set $base0E #B48EAD
-set $base0F #5E81AC
+set $base00 #e0e0e0
+set $base01 #d0d0d0
+set $base02 #c0c0c0
+set $base03 #707070
+set $base04 #202020
+set $base05 #000000
+set $base06 #f8f8f8
+set $base07 #c4d9c4
+set $base08 #000090
+set $base09 #006565
+set $base0A #006565
+set $base0B #730073
+set $base0C #755B00
+set $base0D #007300
+set $base0E #840000
+set $base0F #755B00
 
 client.focused          $base02 $base02 $base05 $base03 $base02
 client.focused_inactive $base01 $base01 $base03 $base01 $base01
